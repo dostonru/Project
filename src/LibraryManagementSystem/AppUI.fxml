@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LibraryManagementSystem.LibraryController">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <AnchorPane fx:id="mainWundow" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="900.0" style="-fx-background-color: #fff;" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="logInBtn" layoutY="142.0" mnemonicParsing="false" onAction="#logInShow" prefHeight="37.0" prefWidth="103.0" style="-fx-background-color: #fff;" text="Log in" />
+            <Button fx:id="signUpBtn" layoutY="187.0" mnemonicParsing="false" onAction="#signUpShow" prefHeight="37.0" prefWidth="103.0" style="-fx-background-color: #fff;" text="Sign up" />
+            <AnchorPane fx:id="anchor" layoutX="101.0" layoutY="-9.0" prefHeight="420.0" prefWidth="350.0" style="-fx-background-color: linear-gradient(#FEC180,#FF8993); -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 20,0,0,0);">
+               <children>
+                  <Text fill="WHITE" layoutX="14.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-family: Roboto; -fx-font-size: 30;" text="Welcome to Library" textAlignment="CENTER" wrappingWidth="361.7799377441406">
+                     <font>
+                        <Font name="Microsoft YaHei UI" size="57.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="logInPan" layoutX="480.0" layoutY="60.0" prefHeight="340.0" prefWidth="415.0" style="-fx-background-color: #fff;">
+               <children>
+                  <Button fx:id="logInBtnIn" layoutX="128.0" layoutY="256.0" mnemonicParsing="false" onAction="#logInAction" prefHeight="25.0" prefWidth="114.0" text="log in" />
+                  <TextField layoutX="41.0" layoutY="130.0" prefHeight="25.0" prefWidth="281.0" promptText="id" />
+                  <TextField layoutX="41.0" layoutY="170.0" prefHeight="25.0" prefWidth="281.0" promptText="password" />
+                  <Text layoutX="41.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Log in">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <ComboBox fx:id="selectUserLogIn" layoutX="40.0" layoutY="210.0" prefWidth="150.0" promptText="Select" />
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="signUpPan" layoutX="489.0" layoutY="-9.0" prefHeight="420.0" prefWidth="397.0" style="-fx-background-color: #fff;">
+               <children>
+                  <Text fill="#434343" layoutX="33.0" layoutY="165.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign Up">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <TextField layoutX="32.0" layoutY="199.0" prefHeight="25.0" prefWidth="281.0" promptText="id" />
+                  <TextField layoutX="32.0" layoutY="239.0" prefHeight="25.0" prefWidth="281.0" promptText="password" />
+                  <ComboBox fx:id="selectUserSignUp" layoutX="32.0" layoutY="276.0" prefWidth="150.0" promptText="Select" />
+                  <Button fx:id="registerBtn" layoutX="119.0" layoutY="326.0" mnemonicParsing="false" onAction="#registerAction" prefHeight="25.0" prefWidth="114.0" text="register" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>
